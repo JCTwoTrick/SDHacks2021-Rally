@@ -1,0 +1,165 @@
+body{
+    background-color:white;
+    font-family: "Degular";
+    font-size:16px;
+    line-height:1.6em;
+    margin:0;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+.separator{
+    height: 150px;
+}
+
+#main-header{
+    background-color:white;
+    color:white;
+    margin-bottom:5px;
+}
+
+#logo{
+    width:146.7px;
+    height:108.9px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#myInput{
+    float:right;
+}
+
+#main-image{
+    height:627px;
+    width: 1903px;
+}
+
+#trending-img{
+    width:300px;
+    height:301px;
+    float:left;
+}
+
+#start-text{
+    padding-top:5px;
+    font-size:20px;
+}
+
+.link{
+    text-decoration:none;
+    display:inline-block;
+    color:black;
+}
+
+.text-link{
+    text-decoration:none;
+    display:inline-block;
+    color:black;
+}
+
+.center{
+    display:block;
+    margin-left:0px;
+    margin-right:0px;
+    width: 480px;
+    border-radius:5px;
+}
+
+.start-button{
+    text-decoration:none;
+    /*display:inline-block;*/
+    color:white;
+    float:right;
+}
+
+.showcase{
+    position:relative;
+}
+
+.trending{
+    margin-top:300px;
+    position:absolute;
+    background-color:white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:1050px;
+    height:300px;
+}
+
+.background-trending{
+    margin-top:300px;
+    position:absolute;
+    background-color:#ebad4b;
+    top:51%;
+    left:50.4%;
+    transform: translate(-50%, -50%);
+    width:1050px;
+    height:300px;
+}
+
+.create{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 1050px;
+    height:300px;
+    color:white;
+}
+
+.text-box{
+    padding-left:320px;
+    padding-right:150px;
+    text-align:left;
+    font-size:30px;
+}
+
+.trending-summary{
+    font-size:16px;
+    padding-right:150px;
+    text-align:left;
+    float:left;
+}
+
+.start{
+    height:70px;
+    width:130px;
+    background-color:#ebad4b;
+    border-radius:5px;
+    text-align:center;
+    float:right;
+}
+
+a.link:hover{
+    background:#ebad4b;
+}
+a.start-button:hover{
+    color:#ccc;
+}
+
+.join{
+    height:50px;
+    width:100px;
+    border:1px solid #ebad4b;
+    border-radius:5px;
+    text-align:center;
+    float:right;
+}
+
+.block{
+    padding:5px;
+    float:left;
+    width:33.3%;
+    box-sizing:border-box;
+}
+
+@font-face{
+    font-family: "Degular";
+    src: url("fonts/DegularDemo-Semibold.otf");
+}

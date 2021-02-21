@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@800&family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style2.css">
+
+  <!-- Jquery -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/384423da0e.js" crossorigin="anonymous"></script>
+
+  <title>Rally</title>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  <script>
+    const projectId = 'sdhacks2021-80d41';
+    const config = {
+      apiKey: "AIzaSyDtiVFZyZstyJkxgscIRinuuWuRunHX1PE",
+      authDomain: "sdhacks2021-80d41.firebaseapp.com",
+      projectId: "sdhacks2021-80d41",
+      storageBucket: "sdhacks2021-80d41.appspot.com",
+      messagingSenderId: "513237185912",
+      appId: "1:513237185912:web:2a4c7418a368c3c389848d",
+      measurementId: "G-YZLV5RXY03"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+  <div id="login" class="form-container">
+    <h1>Log In</h1>
+    <hr>
+
+    <div id="email" class="form-group" data-step="1">
+      <label>Enter Your Email</label>
+      <input id="email-input" class="form-control" type="text">
+    </div>
+
+    <div id="password" class="form-group final" data-step="2">
+      <label for="password-input">Enter Your Password</label>
+      <input id="password-input" class="form-control" type="password">
+    </div>
+
+    <p id="error-message"></p>
+
+    <button class="btn btn-primary" id="next-button">Next</button>
+
+    <div id="back-button">&#8592;</div>
+
+    <div class="info-section">
+      <p>Don't have an account yet?</p>
+      <a href="signup.html">Sign up for free!</a>
+    </div>
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="create.css">
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+  <script>
+    const projectId = 'sdhacks2021-80d41';
+    const config = {
+      apiKey: "AIzaSyDtiVFZyZstyJkxgscIRinuuWuRunHX1PE",
+      authDomain: "sdhacks2021-80d41.firebaseapp.com",
+      projectId: "sdhacks2021-80d41",
+      storageBucket: "sdhacks2021-80d41.appspot.com",
+      messagingSenderId: "513237185912",
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+  <div id="create" class="form-container">
+    <h1 class="header">Create an event</h1>
+    <hr>
+    <div id="name" class="form-group" data-step="1">
+      <label for="event-input">Name of Event</label>
+      <input id="event-input" type="text" class="form-control">
+    </div>
+
+    <div id="description" class="form-group" data-step="2">
+      <label for="description-input">Event Description</label>
+      <input id="description-input" type="text" class="form-control">
+    </div>
+
+    <div id="location" class="form-group" data-step="3">
+      <label for="location-input">Location of Event</label>
+      <input id="location-input" type="text" class="form-control">
+    </div>
+
+    <div id="date" class="form-group" data-step="4">
+      <label for="date-input">Date of Event</label>
+      <input id="date-input" type="text" class="form-control">
+    </div>
+
+    <div id="time" class="form-group" data-step="5">
+      <label for="time-input">Time of Event</label>
+      <input id="time-input" type="text" class="form-control">
+    </div>
+
+    <div id="image" class="form-group final" data-step="6">
+      <label for="image-input">Upload Event Image</label>
+      <input id="image-input" type="file" class="form-control" accept="image/*">
+    </div>
+
+    <p id="error-message"></p>
+    <button id="next-button" class="btn btn-primary">Next</button>
+
+    <div id="back-button">&#8592;</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
